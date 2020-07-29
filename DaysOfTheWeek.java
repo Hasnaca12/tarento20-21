@@ -7,7 +7,7 @@
 import java.util.*;
 public class DaysOfTheWeek
 {
-final static String[] DAYS={"saturday","sunday","monday","tuesday","wednesday",thursday","friday"};
+final static String[] DAYS={"saturday","sunday","monday","tuesday","wednesday","thursday","friday"};
 public static void main(String[] args)
 {
 Scanner input=new Scanner(System.in);
@@ -27,6 +27,7 @@ int k=y%100;
 int j=y/100;
 
 int day=((((d+5)+((m+1)*26)/10)+k+(k/4)+(j/4)+(5*j))%7);
+input.close();
 System.out.println("5th day after the given date is "+DAYS[day]);
 main(null);
 }
