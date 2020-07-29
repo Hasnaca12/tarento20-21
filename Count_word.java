@@ -39,7 +39,7 @@ public class Count_word{
 
      public static void main(String []args){
         System.out.println("Hello World");
-        Scanner sc= new Scanner(System.in);       
+        Scanner sc = new Scanner(System.in);       
         System.out.print("Enter a string: ");  
          String str= sc.nextLine();        
         String[] words = str.split("\\s+");
